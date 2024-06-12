@@ -64,7 +64,7 @@ const post = async (
     const serializedTransaction = transaction.serialize()
 
     const base64Transaction = Buffer.from(serializedTransaction).toString('base64');
-    const message = 'Thank you for your purchase of ExiledApe #518';
+    const message = 'deneme islemi';
 
     response.status(200).send({ transaction: base64Transaction, message });
 };
